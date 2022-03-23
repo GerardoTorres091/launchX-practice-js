@@ -1,0 +1,79 @@
+html, body, pre, code, kbd, samp {
+    font-family: "font-family you want to use";
+}
+body{
+    
+    font-size: 44px;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.8239670868347339) 0%, rgba(203,0,35,0.8491771708683473) 28%, rgba(0,0,0,0.8267682072829132) 82%);
+}
+a{
+    text-decoration: none;
+}
+.centrar{
+    margin: 0 auto !important;
+}
+.screenPoke{
+    margin-top: 5%;
+    height: 15rem;
+    background-color: #fbfb05;
+}
+.buttonsPoke{
+    margin-top: 1%;
+    height: 6rem;
+    background-color: #fbfb05
+}
+.button {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+  }
+  
+.button:hover {
+    background-color: white;
+    color: red;
+  }
+/* --- MEDIAQUERIES ---  */
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .screenPoke{
+        height: 25rem;
+    }
+    #pokeImg{
+        height: 160px;
+    }
+    .buttonsPoke{
+        height: 10rem;
+    }
+    .img-principal{
+        height: 150px;
+        width: 200px;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) and (max-width: 1600px){
+    .imgPoke{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1600px) {
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokedex</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/estyle.css">
+	<!-- minify -->
+	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+	<!-- latest -->
+	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+	<!-- core style only -->
+	<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="row d-flex justify-content-center">
+			<div class="col-8 col-sm-6">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1920px-International_Pok%C3%A9mon_logo.svg.png" class="img-principal" width="550" height="250" alt="">
+			</div>
+		</div>
+
+		<div class="row d-flex justify-content-center">
+			<div class="col-10 rounded  screenPoke shadow ">
+				<div class="row">
+					<h5 id="titulo">General Information</h5>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-7" id="screen1">
+						<p class="font-monospace">Name <span class="text-decoration-underline" id="valueName"></span></p>
+						<p class="font-monospace">Type <span class="text-decoration-underline" id="valueType"></span></p>
+					</div>
+
+					<div class="col-12 col-sm-7" id="screen2" style="display: none;">
+						<p class="font-monospace">hp <span class="text-decoration-underline" id="valueHp"></span></p>
+						<p class="font-monospace">attack <span class="text-decoration-underline" id="valueAttack"></span></p>
+						<p class="font-monospace">defense <span class="text-decoration-underline" id="valueDefense"></span></p>
+						<p class="font-monospace">special-attack <span class="text-decoration-underline" id="valueEAttack"></span></p>
+						<p class="font-monospace">special-defense <span class="text-decoration-underline" id="valueEDefense"></span></p>
+					</div>
+
+					<div class="col-12 col-sm-7" id="screen3" style="display: none;">
+						<p class="font-monospace"><span class="text-decoration-underline" id="valueM1"></span></p>
+						<p class="font-monospace"><span class="text-decoration-underline" id="valueM2"></span></p>
+						<p class="font-monospace"><span class="text-decoration-underline" id="valueM3"></span></p>
+						<p class="font-monospace"><span class="text-decoration-underline" id="valueM4"></span></p>
+						<p class="font-monospace"><span class="text-decoration-underline" id="valueM5"></span></p>
+					</div>
+
+					<div class="col-12 col-sm-3 d-flex justify-content-center">
+						<img src="./img/pokeball.png" id="pokeImg" width="150px" height="150px" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-9 col-sm-7 rounded  buttonsPoke shadow mb-5">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-6 pt-1">
+						<input class="form-control" type="text" placeholder="pokemon name" id="pokeName" name="pokeName">
+					</div>
+				</div>
+				<div class="row my-1">
+					<div class="col-6 d-flex justify-content-end">
+						<button onclick="fetchPokemon()" class="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search"><i class="fas fa-search"></i></button>
+					</div>
+					<div class="col-6">
+						<button onclick="nextScreen()" class="button"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="+ info"><i class="fas fa-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="col-8 col-sm-5 bg-dark text-white">
+					Made with 🧡 by <a href="https://torresg.xyz/" target="_blank">Gerardo T</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="js/pokedex.js"></script>
+</body>
+
+</html>
